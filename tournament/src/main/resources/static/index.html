@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament Goose</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container bracket-container">
+    <h1>🏆 Tournament Bracket</h1>
+    <div class="controls">
+        <button onclick="displayBracket()" class="btn secondary">Initialiser</button>
+        <button id="tournament-btn" onclick="runFullTournament()" class="btn primary">Lancer</button>
+        <button onclick="resetBracket()" class="btn danger">Reset</button>
+    </div>
+
+    <div id="bracket-view" class="bracket">
+        <div class="round" id="round-1"><h3>Round 1</h3><div class="matches"></div></div>
+        <div class="round" id="round-2"><h3>Round 2</h3><div class="matches"></div></div>
+        <div class="round" id="round-3"><h3>Round 3</h3><div class="matches"></div></div>
+        <div class="round" id="round-4"><h3>Final</h3><div class="matches"></div></div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
